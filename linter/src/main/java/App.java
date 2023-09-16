@@ -58,7 +58,7 @@ public class App {
 
     public static void main(String[] args) throws IOException {
 
-        //Lab3 - part1
+       /* //Lab3 - part1
         int min=0, max=0;
         HashSet<Integer> temp = new HashSet<Integer>();
         ArrayList<Integer> tempNotSeen = new ArrayList<Integer>();
@@ -134,6 +134,8 @@ public class App {
         //Lab3 - part3
         Path filePath = Paths.get("D:/java_Course/java-fundamentals/linter/src/resources/gates.js");
         
-        ReadFile(filePath);
+        ReadFile(filePath);*/
+
+        System.out.println(args);
     }
 }
