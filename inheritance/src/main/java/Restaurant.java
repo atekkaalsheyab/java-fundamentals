@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Restaurant {
+public class Restaurant extends Reviewing {
     private String name;
     private int num;
     private float price;
@@ -38,25 +38,17 @@ public class Restaurant {
         this.price = price;
     }
 
-    @Override
+    public void addReview(Review review) {
+        super.addReview(review);
+        num=numberOfStars;
+    }
+        @Override
     public String toString() {
         return "Restaurant{" +
                 "name='" + name + '\'' +
                 ", num=" + num +
                 ", price=" + price +
                 '}';
-    }
-
-    public void addReview (Review review){
-        if (ListOfReview.contains(review)){
-            System.out.println("The review is already exists");
-        }else {
-            ListOfReview.add(review);
-            for (int i = 0; i < ListOfReview.size(); i++) {
-                sum+=review.getNumOfStar();
-            }
-            num=sum/ListOfReview.size();
-        }
     }
 
 }

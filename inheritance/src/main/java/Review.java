@@ -41,6 +41,12 @@ public class Review {
                 ", numOfStar=" + numOfStar +
                 '}';
     }
+    public String toString(String movieName) {
+        return "Review{" +
+                "body='" + body + '\'' +
+                ", author='" + author + '\'' +
+                ", numOfStar=" + numOfStar +", movie's name: "+movieName+
+                '}';
+    }
 
-
-}
+    }
