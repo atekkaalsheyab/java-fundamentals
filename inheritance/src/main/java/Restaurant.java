@@ -38,12 +38,13 @@ public class Restaurant extends Reviewing {
         this.price = price;
     }
 
-    public void addReview(Review review) {
+   /* public void addReview(Review review) {
         super.addReview(review);
         num=numberOfStars;
-    }
+    }*/
         @Override
     public String toString() {
+            System.out.println(super.toString());
         return "Restaurant{" +
                 "name='" + name + '\'' +
                 ", num=" + num +

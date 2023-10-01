@@ -5,7 +5,6 @@ public class Shops extends Reviewing{
     private String description ;
     private float shopPrice;
 
-    private ArrayList<Review> ListOfShopReview= new ArrayList<Review>();
 
     public Shops(String name, String description, float shopPrice) {
         this.name = name;
@@ -39,6 +38,7 @@ public class Shops extends Reviewing{
 
     @Override
     public String toString() {
+        System.out.println(super.toString());
         return "Shops{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +

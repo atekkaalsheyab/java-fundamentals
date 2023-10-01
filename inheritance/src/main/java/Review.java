@@ -1,12 +1,23 @@
 public class Review {
     private String body;
+    private String movie_name;
     private String author;
+
+    public String getMovie_name() {
+        return movie_name;
+    }
+
+    public void setMovie_name(String movie_name) {
+        this.movie_name = movie_name;
+    }
+
     private int numOfStar;
 
     public Review(String body, String author, int numOfStar) {
         this.body = body;
         this.author = author;
         this.numOfStar = numOfStar;
+
     }
 
     public String getBody() {
